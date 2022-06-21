@@ -1,0 +1,255 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+li {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+.p-color{
+  color: #916c02;
+}
+
+/* Header  */
+
+/* Top Header */
+.top-header{
+  background-color: #f9f8f3;
+}
+.top-header ul li a{
+  color: #bea44d;
+}
+
+/* Nav */
+
+nav .navbar-nav .active{
+  color: #bea44d !important;
+  border-bottom: 2px solid #bea44d;
+  font-weight: 600;
+  transition: none !important;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: rgba(0,0,0,.9);
+  font-weight: 600;
+
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #bea44d !important;
+  border-bottom: 2px solid #bea44d;
+  font-weight: 600;
+  transition: none !important;
+  
+}
+
+.carousel-inner{
+  position: relative;
+  z-index: 0;
+  
+}
+.carousel-inner .overlay{
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color:#bea44d !important; 
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  z-index: 1;
+}
+.carousel-content {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 15%;
+  left: 7%;
+  z-index: 3;
+  overflow: hidden;
+}
+.carousel-content h2{
+  font-size: 56px;
+  color: #fff !important;
+}
+.carousel-content span{
+  background-color: #fff;
+  color:#bea44d ;
+}
+
+.carousel-content .client a{
+ font-size: 26px;
+}
+
+/* Service Section */
+.service .col-md-3 a{
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  border: 1px solid #bea44d;
+  color: #bea44d;
+  border-radius: 50%;
+  padding: 10px 15px;
+}
+
+/* Feature Section */
+.feature .feature-slider{
+  padding: 50px 150px;
+}
+.feature .carousel-control-next, .feature .carousel-control-prev{
+  background-color: #bea44d;
+  position: absolute;
+  top: 50%;
+  width: 4%;
+  height: 11%;
+  opacity: .8;
+}
+.header-txt h2{
+  font-size: 42px;
+  font-weight: 600;
+  color: #916c02;
+}
+.header-txt p{
+  line-height: 2;
+  margin: 20px 170px !important;
+}
+
+/* Get In Touch Section */
+
+.get-touch form input,textarea{
+  background-color: #fffaef !important;
+}
+
+.get-touch form a {
+  color: #f9f8f3;
+  background-color: #916c02 !important;
+  border: 1px solid #916c02;
+  border-radius: 6px;
+  padding: 8px 18px;
+}
+.get-touch form a:hover{
+  background-color: #fff !important;
+  color: #916c02;
+}
+
+/* contact-us section */
+.contact-us .col-md-5 ul li a{
+  color: #916c02 !important;
+}
+.contact-us .col-md-4 ul li a{
+  color: #000 !important;
+  word-spacing: 10px;
+}
+.contact-us{
+  background:#f9edd5
+}
+
+/* Footer Section */
+footer{
+  background-color: #bea44d;
+}
+
+footer .col-md-6 ul li a{
+  color: #fff !important;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+@media all and (max-width:991px){
+  .carousel-content h2{
+    font-size: 36px !important;
+    color: #fff !important;
+  }
+  .carousel-content span{
+    background-color: #fff;
+    color:#bea44d ;
+  }
+  
+  .carousel-content .client a{
+   font-size: 20px !important;
+  }
+
+ 
+
+}
+
+@media all and (max-width:767px){
+  .carousel-content h2{
+    font-size: 28px !important;
+    color: #fff !important;
+  }
+  .carousel-content span{
+    background-color: #fff;
+    color:#bea44d ;
+  }
+  
+  .carousel-content .client a{
+   font-size: 16px;
+  }
+
+  .header-txt h2{
+    font-size: 36px;
+  }
+  .header-txt p{
+    margin: 20px 100px !important;
+  }
+
+  .feature .feature-slider{
+    padding: 30px 80px;
+  }
+
+}
+
+
+@media all and (max-width:575px){
+  .carousel-content h2{
+    font-size: 22px !important;
+    color: #fff !important;
+    margin-bottom: 8px !important;
+  }
+  .carousel-content span{
+    background-color: #fff;
+    color:#bea44d ;
+  }
+  
+  .carousel-content .client a{
+   font-size: 14px !important;
+  }
+  .carousel-content .client h4{
+    font-size: 16px !important;
+  }
+  .carousel-content .client p{
+    font-size: 14px !important;
+  }
+  .header-txt h2{
+    font-size: 36px;
+  }
+  .header-txt p{
+    margin: 20px 80px !important;
+  }
+  .feature .feature-slider{
+    padding: 10px 40px;
+  }
+  footer .col-sm-12{
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  footer .col-sm-12 p{
+    font-size: 14px !important;
+    margin-bottom: 0% !important;
+  }
+
+}
